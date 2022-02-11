@@ -1,0 +1,65 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+
+
+
+int main() {
+    int n;
+    scanf("%d",&n);
+    //int a = 0,b = 0,c = 0,d = 0,e = 0,f = 0,g = 0,h = 0,k = 0,m = 0;
+    int lis[10];
+    for(int i = 0;i < 10;i++){
+        lis[i] = 0;
+    }
+    for(int i = 0;i <= n;i++){
+        string l;
+        getline(cin,l);
+        for(int j = 0;j < l.size();j++){
+        if(l[j] == '0'){
+            lis[0]++;
+        }
+        if(l[j] == '1'){
+            lis[1]++;
+        }
+        if(l[j] == '2'){
+            lis[2]++;
+        }
+        if(l[j] == '3'){
+            lis[3]++;
+        }
+        if(l[j] == '4'){
+            lis[4]++;
+        }
+        if(l[j] == '5'){
+            lis[5]++;
+        }
+        if(l[j] == '6'){
+            lis[6]++;
+        }
+        if(l[j] == '7'){
+            lis[7]++;
+        }
+        if(l[j] == '8'){
+            lis[8]++;
+        }
+        if(l[j] == '9'){
+            lis[9]++;
+        }
+
+    }
+    }
+    for(int i = 0;i < 10;i++){
+        printf("%d-%d \n",i,lis[i]);
+    }
+    /*OUTRA FORMA: criar uma l[10] com 10 zeros e usar o l[0] como a,o l[1] como b...*/
+
+
+
+
+
+return 0;
+
+}
